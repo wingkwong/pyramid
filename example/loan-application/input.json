@@ -1,0 +1,17 @@
+{
+    "applicant": {
+        "name": "",
+        "age": 30,
+        "occupation": "",
+        "applicantAddress": {
+            "address": "address XYZ",
+            "zipcode": "LC3123"
+        }
+    }, 
+    "bankruptcy": {
+        "amountOwed": 3000
+    },
+    "incomeSrouce": {
+        "amount": 5000
+    }
+}

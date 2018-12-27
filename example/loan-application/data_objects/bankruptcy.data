@@ -1,0 +1,8 @@
+{
+    "$$bankruptcy": {
+        "type": "object",
+        "value": {
+            "amountOwed": "number"
+        }
+    }
+}

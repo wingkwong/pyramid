@@ -1,0 +1,9 @@
+{
+    "$$applicant": {
+        "type": "object",
+        "value": {
+            "age": "number",
+            "applicantAddress": "$$applicantAddress"
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "id": 0,
+    "name": "Loan Application",
+    "description": "Check if loan application is approved or rejected ",
+    "when": [
+        {
+            "$and": [
+                {
+                    "fact": "$$applicant.age",
+                    "operator": "<=",
+                    "value": 25
+                },
+                {
+                    "$and": [
+                         {
+                            "fact": "$$bankruptcy.amountOwed",
+                            "operator": "==",
+                            "value": 100000
+                        },
+                        {
+                            "fact": "$$incomeSource.amount",
+                            "operator": ">=",
+                            "value": 30000
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "fact": "$$applicant.$$applicantAddress.zipcode",
+            "operator": "==",
+            "value": "AZ1234"
+        }
+    ],
+    "then": {
+
+    }
+}

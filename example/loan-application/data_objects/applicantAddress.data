@@ -1,0 +1,9 @@
+{
+    "$$applicantAddress": {
+        "type": "object",
+        "value": {
+            "address": "string",
+            "zipcode": "string"
+        }
+    }
+}

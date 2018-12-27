@@ -1,0 +1,8 @@
+{
+    "$$incomeSrouce": {
+        "type": "object",
+        "value": {
+            "amount": "number"
+        }
+    }
+}
