@@ -1,6 +1,11 @@
 # pyramid
 JSON-based Business Rules Engine
 
+## Installing
+````
+npm install pyramid-rules-engine
+````
+
 ## Modules
 pyramid contains serveral modules - ``loader``, `validator`, `stores`, `loggers`, `operators`, `rules`. 
 
@@ -9,6 +14,30 @@ Loader is responsible for loading data files such as data objects and input json
 
 ### Validator 
 Validator is responsible for validating the input source loaded by Loader. The scope includes rule properties, rule id and rule conditions.
+
+### Rule Properties
+Properties such as ``id``, ``name``, ``when`` are mandatory.
+
+### Rule ID
+Rule ID must be unqiue.
+
+### Rule Conditions
+Rule conditions are objects defined in ``when``. Each object can contain other nested objects.
+
+#### $AND and $OR
+If you want to define a condition with a logical operators such as AND and OR. You have to use an array with the attribute `$and` and `or`. Each array could only contain two objects. Nested objects are also supported.
+
+#### Condition
+A condition is an an object with three attributes - ``fact``, ``operator`` and ``value``
+
+``fact``: The target attribute which is being used to evalute. It has to be started with a data object, such as ``$$bankruptcy.amountOwed``. Another example for a data object is inside another object would be ``$$applicant.$$applicantAddress.zipcode``.
+
+``operator`: Please refer to Operators below.
+
+``value``: The value is used to compare with the one in input file.
+
+A condition will be evaluted and return a boolean indicating if the condition is met with the defined criteria.
+
 
 ### Stores
 Stores is responsible for centralizing stores such as ``DATA_OBJECTS_STORE``, ``RULES_STORE``, ``INPUT_FILE_STORE`` and ``RESULT_STORE``
@@ -157,10 +186,13 @@ Rules is responsible for initializing the rule engine, process and evalute the d
 
 ## Run
 ````
-node index.js <PYRAMID_CFG_PATH>
+node pyramid.js <PYRAMID_CFG_PATH>
 ````
 
-## Sample Result
+## Example
+The example can be found in folder [example](https://github.com/wingkwong/pyramid/tree/master/example)
+
+## Example Result
 ````
 ------------------------------------------------------------------------
 [INFO] Load Initialization
