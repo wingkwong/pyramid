@@ -1,7 +1,7 @@
 {
     "id": 1,
-    "name": "checkApplicantAge",
-    "description": "Check applicant age ",
+    "name": "Check Applicant Age",
+    "description": "Check applicant age",
     "when": [
         {
             "fact": "$$applicant.age",
