@@ -1,0 +1,9 @@
+{
+    "$$coApplicantObject": {
+        "type": "object",
+        "value": {
+            "name": "string",
+            "applicantReferralCode": "string"
+        }
+    }
+}

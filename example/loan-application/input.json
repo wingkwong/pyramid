@@ -1,17 +1,27 @@
 {
     "applicant": {
-        "name": "",
-        "age": 30,
-        "occupation": "",
+        "name": "Zayna Wainwright",
+        "age": 24,
+        "occupation": "N/A",
         "applicantAddress": {
-            "address": "address XYZ",
-            "zipcode": "LC3123"
+            "address": "2752  Star Route",
+            "zipcode": "60634"
         }
     }, 
     "bankruptcy": {
         "amountOwed": 3000
     },
-    "incomeSrouce": {
-        "amount": 5000
-    }
+    "incomeSource": {
+        "amount": 35000
+    },
+    "coApplicant": [
+        {
+            "name": "Milena Sears",
+            "applicantReferralCode": "CA1234"
+        },
+        {
+            "name": "Clement Simpson",
+            "applicantReferralCode": "CA2345"
+        }
+    ]
 }

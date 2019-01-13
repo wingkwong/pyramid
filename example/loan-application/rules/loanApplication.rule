@@ -11,7 +11,7 @@
                     "value": 25
                 },
                 {
-                    "$and": [
+                    "$or": [
                          {
                             "fact": "$$bankruptcy.amountOwed",
                             "operator": "==",
@@ -29,10 +29,12 @@
         {
             "fact": "$$applicant.$$applicantAddress.zipcode",
             "operator": "==",
-            "value": "AZ1234"
+            "value": "5223"
+        },
+        {
+            "fact": "$$coApplicant.name",
+            "operator": "==",
+            "value": "Milena Sears"
         }
-    ],
-    "then": {
-
-    }
+    ]
 }

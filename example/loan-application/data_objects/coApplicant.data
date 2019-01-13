@@ -1,0 +1,6 @@
+{
+    "$$coApplicant": {
+        "type": "array",
+        "value": "$$coApplicantObject"
+    }
+}

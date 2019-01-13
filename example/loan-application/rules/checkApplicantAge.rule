@@ -1,0 +1,12 @@
+{
+    "id": 1,
+    "name": "checkApplicantAge",
+    "description": "Check applicant age ",
+    "when": [
+        {
+            "fact": "$$applicant.age",
+            "operator": ">=",
+            "value": 25
+        }
+    ]
+}
