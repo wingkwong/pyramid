@@ -52,7 +52,7 @@ logger('Normal Logger');
 
 Error Logger: 
 ````
-errorLogger('Normal Logger');
+errorLogger('Error Logger');
 ````
 
 ### Operators 
